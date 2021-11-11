@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -24,6 +25,7 @@ public class FimActivity extends AppCompatActivity {
         String res = "Parabéns ! Acertou o num "+num;
 
         tvRes = (TextView)findViewById(R.id.tvRes);
+        tvRes.setGravity(Gravity.CENTER);
         btnVoltar = (Button)findViewById(R.id.btnVoltar);
 
         tvRes.setText(res);
